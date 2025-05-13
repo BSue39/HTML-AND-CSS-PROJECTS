@@ -1,0 +1,9 @@
+p {
+	color: snow;
+	background: black;
+	font-weight: bold;
+	text-align: center;
+}
+h3 {
+	text-shadow: 2px 1px #ff0000;
+}
