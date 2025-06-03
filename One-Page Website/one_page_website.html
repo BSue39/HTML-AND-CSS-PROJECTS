@@ -1,18 +1,21 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<title>11th St Photography</title>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="CSS/one_page_website.css">
 		<body>
 			<!--NAVBAR-->
-			<nav>
+			<nav class="nav-bar">
 				<ul>
-					<a href="#clouds"><li>Storm Clouds</li></a>
-					<a href="#road"><li>Open Road</li></a>
-					<a href="#wine"><li>Wine Glasses</li></a>
-					<a href="#leaf"><li>Leaf in the Snow</li></a>
-					<a href="#dog"><li>Dog Close Up</li></a>
-					<a href="#video"><li>Video</li></a>
+					<a href="#clouds" aria-label="Storm Clouds"><li>Storm Clouds</li></a>
+					<a href="#road" aria-label="Open Road"><li>Open Road</li></a>
+					<a href="#wine" aria-label="Wine"><li>Wine Glasses</li></a>
+					<a href="#leaf" aria-label="Leaf"><li>Leaf in the Snow</li></a>
+					<a href="#dog" aria-label="Dog"><li>Dog Close Up</li></a>
+					<a href="#video" aria-label="Video"><li>Video</li></a>
+				</ul>
+			</nav>		
 			<header>
 				<div>
 					<h1>11th St Photography</h1>
@@ -59,15 +62,20 @@
 				</div>
 			</section>
 			<section>
-				<div>
+				<div id="contact">
 					<h3>Please provide your contact information and a brief message
 					of your order.</h3>
 					<div>
 						<form>
-							<input type="text" placeholder="First Name">
+							<label for="name">First Name:</label><br>
+							<input type="text" placeholder="First Name"><br>
+							<label for="name">Last Name:</label><br>
 							<input type="text" placeholder="Last Name"><br>
+							<label for="email">Email:</label><br>
 							<input type="email" placeholder="Email"><br>
+							<label for="tel">Phone Number:</label><br>
 							<input type="tel" placeholder="Phone Number"><br>
+							<label for="message">Type Message Here</label><br>
 							<textarea placeholder="Type message here..."></textarea><br>
 							<input type="submit" value="Submit">
 						</form>

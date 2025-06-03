@@ -1,0 +1,146 @@
+/*Import link for Kaushan Script font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kaushan+Script&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap');
+
+a, header, div{
+    font-family: "Kaushan Script", cursive;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h3{
+    text-align: center;
+}
+
+/*NAVBAR*/
+
+.nav-bar{
+    position: sticky; /*Creates a sticky element that stays
+    in the same spot in the browser screen*/
+    top: 0; /*Tells the browser to stick the element at the
+    top of the page based on user scrolling*/
+    z-index: 9; /*Sets the stack layer of the navbar to scroll
+    over all elements*/
+}
+
+ul{
+    display: flex; /*Creates a flex container which will
+    expand or shrink elements to fill the space available
+    to them and place the elements side by side horizontally*/
+    list-style-type: none; /*Removes the default styling
+    for unordered list elements*/
+    align-items: center;
+    margin: -8px -8px 0px -8px; /*The margin order is top,
+    right, bottom, and left. The negative margins will stretch
+    the background beyond the edge of the browser screen*/
+    background-color: rgb(24, 1, 128);
+    border-bottom: 5px solid rgb(249, 245, 246);
+}
+
+a{
+    display: block; /*Displays anchor elements vertically
+    on a new line, this was added so the drop down menu
+    displays vertically and not horizontally on the screen*/
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(249, 245, 246);
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in;
+}
+
+/*CONTACT FORM CSS*/
+
+/*Sets up the content within the div tag containing the ID
+contact to be centered on the webpage*/
+#contact{
+    display: block;
+    margin-bottom: 70px;
+}
+
+form{
+    display: table; /*This will display the form in a table
+    format as rows and columns*/
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto; /*The browser will automatically
+    calculate margins to center the form on the screen*/
+}
+
+/*This will specifically target the input tags that are
+nested within the form tags*/
+form input{
+    font-family: 'Courier New', Courier, monospace;
+    /*Monospace refers to fonts that have a uniform amount
+    of space between each letter*/
+    font-size: 15px;
+    color: rgb(24, 1, 128);
+    border: 2px solid rgb(24, 1, 128);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+    transition: 0.3s ease-out; /*Transitions back to light
+    gray when a user clicks away from an input field*/
+}
+
+form input:focus{
+    border: 2px solid rgb(24, 1, 128);
+    color: black;
+    outline: none; /*Removes default border added when the
+    focus pseudo class is triggered*/
+    transition: 0.3s ease-out;
+}
+
+label{
+    font-family: 'Josefin Slab', serif; /*Font from
+    fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both; /*Will allow the user to resize the text
+    area both in width and height*/
+    border: 3px solid rgb(24, 1, 128);
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(24, 1, 128);
+    font-size: 15px;
+    transition: 0.3s ease-out; /*Will transition back to
+    light gray*/
+}
+
+textarea:focus{
+    color: black;
+    border: 3px solid rgb(24, 1, 128);
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+input[type="submit"]{
+    background-color: rgb(24, 1, 128);
+    border: none;
+    border-radius: 35px;
+    font-family: 'Josefin Slab' serif; /*Font from
+    fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    float: right; /*Positions the submit button to the
+    bottom right of the form*/
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(177, 238, 247);
+}
