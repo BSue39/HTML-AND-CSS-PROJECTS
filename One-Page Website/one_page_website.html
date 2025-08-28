@@ -21,6 +21,64 @@
 					<h1>11th St Photography</h1>
 				</div>	
 			</header>
+
+			<!--Images used to open the lightbox-->
+			<div class="row">
+				<div class="column">
+					<img src="images_plants/plant1-small.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+					<img src="images_plants/plant2-small.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+					<img src="images_plants/plant3-small.png"style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+				</div>
+			</div>
+
+			<!--The Modal/Lightbox-->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 3</div>
+						<img src="images_plants/plant1.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 3</div>
+						<img src="images_plants/plant2.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 3</div>
+						<img src="images_plants/plant3.png" style="width:100%">
+					</div>
+
+					<!--Next/Previous Controls-->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!--Caption Text-->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!--Thumbnail Image Controls-->
+					<div class="column">
+						<img class="thumb" src="images_plants/plant1-small.png" style="width:100%" onclick="currentSlide(1)" alt="Flowers">
+					</div>
+
+					<div class="column">
+						<img class="thumb" src="images_plants/plant2-small.png" style="width:100%" onclick="currentSlide(2)" alt="Dandelions">
+					</div>
+
+					<div class="column">
+						<img class="thumb" src="images_plants/plant3-small.png" style="width:100%" onclick="currentSlide(3)" alt="Succulents">
+					</div>
+				</div>
+			</div>
+
 			<!--Photography Images-->
 			<section>
 				<div>
@@ -98,7 +156,8 @@
 						</td>
 					</tr>
 				</table>
-			</footer>	
+			</footer>
+			<script src="JS/one_page_website.js"></script>	
 		</body>
 	</head>
 </html>	
