@@ -313,3 +313,28 @@ selector styling*/
     width: auto;
     height: 130px;
 }
+
+/*POPOVERS*/
+
+.star-rating{
+    width: 80%
+}
+
+/*TOAST*/
+
+.custom-toast{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+/*Bootstrap Componenet Challenge*/
+// Base class
+.callout {}
+
+// Modifier classes
+.callout-info {}
+.callout-warning {}
+.callout-danger {}
