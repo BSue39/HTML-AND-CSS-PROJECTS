@@ -36,6 +36,17 @@ body{
     height: 100px;   
 }
 
+/*SHRINK ON SCROLL NAVBAR*/
+.nav-shrink {
+    height: 80px;
+    transition: 0.5s ease;
+}
+
+/*Adds a transition to the movie drop down menu on shrink and scroll*/
+.navbar-collapse {
+    transition: margin-top 0.5s ease;
+}
+
 /*Affects the title in the navbar Academy Cinemas*/
 .navbar-brand{
     color: var(--main-color-accent);
@@ -331,10 +342,18 @@ selector styling*/
 }
 
 /*Bootstrap Componenet Challenge*/
-// Base class
-.callout {}
+/* Base class*/
+.callout {
+    background-color: white;
+}
 
-// Modifier classes
-.callout-info {}
-.callout-warning {}
-.callout-danger {}
+/* Modifier classes*/
+.callout-info {
+    background-color: green;
+}
+.callout-warning {
+    background-color: yellow;
+}
+.callout-danger {
+    background-color: red;
+}
