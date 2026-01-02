@@ -1,0 +1,244 @@
+/* =====================
+   GLOBAL STYLES
+   ===================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    color: #2b2b2b;
+    background-color: #f7faf8;
+    line-height: 1.7;
+}
+
+/* =====================
+   NAVBAR
+   ===================== */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #2f6f4e;
+    padding: 12px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 14px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+nav ul li a:hover {
+    color: #ffefd5;
+}
+
+/* =====================
+   SECTIONS
+   ===================== */
+section {
+    padding: 100px 24px 70px;
+    max-width: 900px;
+    margin: auto;
+}
+
+#home {
+    background-color: #e8f3ee;
+}
+
+#roses {
+    background-color: #fff0f3;
+}
+
+#tulips {
+    background-color: #fff6e5;
+}
+
+#lilies {
+    background-color: #f4f6ff;
+}
+
+#sunflowers {
+    background-color: #fffbe6;
+}
+
+#orchids {
+    background-color: #f8f1ff;
+}
+
+#about {
+    background-color: #eef7f2;
+}
+
+#contact {
+    background-color: #ffffff;
+}
+
+/* =====================
+   HEADINGS
+   ===================== */
+h1, h2 {
+    color: #2f6f4e;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   IMAGES
+   ===================== */
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;          /* Crops image to square */
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+/* =====================
+   PARAGRAPHS
+   ===================== */
+p {
+    font-size: 16px;
+    max-width: 750px;
+    margin: 10px auto;
+    color: #333333;
+}
+
+/* =====================
+   FORM
+   ===================== */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #2f6f4e;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #24573d;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+footer {
+    background-color: #2f6f4e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* =====================
+   LIGHTBOX
+   ===================== */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 2000;
+}
+
+#lightbox.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+/* =====================
+   SCROLL TO TOP BUTTON
+   ===================== */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #2f6f4e;
+    color: white;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    z-index: 1500;
+}
+
+#scrollTopBtn.show {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+#scrollTopBtn:hover {
+    background-color: #24573d;
+}
